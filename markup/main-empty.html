@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraDream - Магазин цветов</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div style="display: none">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-arrow-select" viewbox="0 0 7 4">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0l3.5 2.813L7 0v1.084L3.5 4 0 1.084V0z"></path>
+        </symbol>
+      </svg>
+    </div>
+
+    <div class="page page--main-empty">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__left">
+              <a class="header__logo-link header__logo-link--active" href="main.html">
+                <img class="header__logo" src="img/logo.svg" alt="FloraDream" width="81" height="41">
+              </a>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item user">
+                  <a class="header__nav-link header__nav-link--profile" href="#">
+                    <div class="header__avatar-wrapper user__avatar-wrapper"></div>
+                    <span class="header__user-name user__name">user@example.com</span>
+                    <span class="header__favorite-count">3</span> ❤️
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">
+                    <span class="header__signout">Выйти</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="page__main page__main--index-empty">
+        <h1 class="visually-hidden">FloraDream - Каталог</h1>
+        <div class="categories">
+          <section class="container">
+            <ul class="categories__list">
+              <li class="categories__item">
+                <a class="categories__item-link" href="#">
+                  <span>Букеты</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a class="categories__item-link" href="#">
+                  <span>Горшечные растения</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a class="categories__item-link" href="#">
+                  <span>Свадебная флористика</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a class="categories__item-link categories__item-link--active" href="#">
+                  <span>Подарочные наборы</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="empty-catalog">
+          <div class="empty-catalog__container container">
+            <section class="empty-catalog__message">
+              <div class="empty-catalog__wrapper">
+                <div class="empty-catalog__icon">🌷</div>
+                <b class="empty-catalog__status">В этой категории пока нет товаров</b>
+                <p class="empty-catalog__description">Мы уже работаем над пополнением ассортимента. Посмотрите другие наши категории!</p>
+                <a href="main.html" class="empty-catalog__button button">Вернуться в каталог</a>
+              </div>
+            </section>
+            <div class="empty-catalog__image"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

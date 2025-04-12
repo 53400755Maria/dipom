@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraDream - Авторизация</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div style="display: none">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-arrow-select" viewbox="0 0 7 4">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0l3.5 2.813L7 0v1.084L3.5 4 0 1.084V0z"></path>
+        </symbol>
+      </svg>
+    </div>
+
+    <div class="page page--gray page--login">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__left">
+              <a class="header__logo-link" href="main.html">
+                <img class="header__logo" src="img/logo.svg" alt="FloraDream" width="81" height="41">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page__main page__main--login">
+        <div class="page__login-container container">
+          <section class="login">
+            <h1 class="login__title">Добро пожаловать в FloraDream</h1>
+            <div class="login__flower-icon">🌸</div>
+            <form class="login__form form" action="#" method="post">
+              <div class="login__input-wrapper form__input-wrapper">
+                <label class="visually-hidden">Email</label>
+                <input class="login__input form__input" type="email" name="email" placeholder="Ваш email" required>
+              </div>
+              <div class="login__input-wrapper form__input-wrapper">
+                <label class="visually-hidden">Пароль</label>
+                <input class="login__input form__input" type="password" name="password" placeholder="Пароль" required>
+              </div>
+              <button class="login__submit form__submit button" type="submit">Войти</button>
+            </form>
+            <div class="login__register">
+              Нет аккаунта? <a href="#" class="login__register-link">Зарегистрируйтесь</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraDream - Избранное</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div style="display: none">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-heart" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </symbol>
+      </svg>
+    </div>
+
+    <div class="page page--favorites-empty">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__left">
+              <a class="header__logo-link" href="main.html">
+                <img class="header__logo" src="img/logo.svg" alt="FloraDream" width="81" height="41">
+              </a>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item user">
+                  <a class="header__nav-link header__nav-link--profile" href="#">
+                    <div class="header__avatar-wrapper user__avatar-wrapper"></div>
+                    <span class="header__user-name user__name">example@mail.com</span>
+                    <span class="header__favorite-count">0</span> ❤️
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">
+                    <span class="header__signout">Выйти</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="page__main page__main--favorites-empty">
+        <div class="favorites-empty">
+          <div class="container">
+            <section class="favorites-empty__content">
+              <div class="favorites-empty__icon">
+                <svg width="80" height="80">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </div>
+              <h1 class="favorites-empty__title">Ваше избранное пока пусто</h1>
+              <p class="favorites-empty__text">
+                Нажимайте на сердечки ❤️ у понравившихся товаров,<br>
+                чтобы сохранить их здесь для быстрого доступа
+              </p>
+              <a href="main.html" class="favorites-empty__button button">Перейти в каталог</a>
+            </section>
+            <div class="favorites-empty__image">
+              <img src="img/empty-favorites.jpg" alt="Цветочная композиция" width="400" height="300">
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer footer--transparent">
+        <a class="footer__logo-link" href="main.html">
+          <img class="footer__logo" src="img/logo.svg" alt="FloraDream" width="64" height="33">
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Изменил на русский язык -->
+<head>
+  <meta charset="utf-8">
+  <title>FloraDream - Избранные букеты</title> <!-- Изменил title -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <a class="header__logo-link" href="main.html">
+              <img class="header__logo" src="img/logo.svg" alt="FloraDream" width="81" height="41"> <!-- Изменил alt -->
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item user">
+                <a class="header__nav-link header__nav-link--profile" href="#">
+                  <div class="header__avatar-wrapper user__avatar-wrapper"></div>
+                  <span class="header__user-name user__name">user@example.com</span> <!-- Изменил email -->
+                  <span class="header__favorite-count">3</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">
+                  <span class="header__signout">Выйти</span> <!-- Изменил на русский -->
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main page__main--favorites">
+      <div class="page__favorites-container container">
+        <section class="favorites">
+          <h1 class="favorites__title">Избранные букеты</h1> <!-- Изменил заголовок -->
+          <ul class="favorites__list">
+            <!-- Букет 1 -->
+            <li class="favorites__locations-items">
+              <div class="favorites__locations locations locations--current">
+                <div class="locations__item">
+                  <span class="locations__item-link">Романтические</span> <!-- Категория -->
+                </div>
+              </div>
+              <div class="favorites__places">
+                <article class="favorites__card place-card">
+                  <div class="favorites__image-wrapper place-card__image-wrapper">
+                    <a href="#">
+                      <img class="place-card__image" src="img/bouquet-1.jpg" width="150" height="110" alt="Букет 'Розовая нежность'">
+                    </a>
+                  </div>
+                  <div class="favorites__card-info place-card__info">
+                    <div class="place-card__price-wrapper">
+                      <div class="place-card__price">
+                        <b class="place-card__price-value">2 990 ₽</b> <!-- Цена в рублях -->
+                      </div>
+                      <button class="place-card__bookmark-button place-card__bookmark-button--active button" type="button">
+                        ♥ <!-- Упрощенная иконка -->
+                      </button>
+                    </div>
+                    <h2 class="place-card__name">
+                      <a href="#">Розовая нежность</a> <!-- Название букета -->
+                    </h2>
+                    <p class="place-card__type">Розы, пионы, эвкалипт</p> <!-- Состав -->
+                  </div>
+                </article>
+              </div>
+            </li>
+
+            <!-- Букет 2 -->
+            <li class="favorites__locations-items">
+              <div class="favorites__locations locations locations--current">
+                <div class="locations__item">
+                  <span class="locations__item-link">Летние</span> <!-- Категория -->
+                </div>
+              </div>
+              <div class="favorites__places">
+                <article class="favorites__card place-card">
+                  <div class="favorites__image-wrapper place-card__image-wrapper">
+                    <a href="#">
+                      <img class="place-card__image" src="img/bouquet-2.jpg" width="150" height="110" alt="Букет 'Летний'">
+                    </a>
+                  </div>
+                  <div class="favorites__card-info place-card__info">
+                    <div class="place-card__price-wrapper">
+                      <div class="place-card__price">
+                        <b class="place-card__price-value">1 790 ₽</b>
+                      </div>
+                      <button class="place-card__bookmark-button place-card__bookmark-button--active button" type="button">
+                        ♥
+                      </button>
+                    </div>
+                    <h2 class="place-card__name">
+                      <a href="#">Летний</a>
+                    </h2>
+                    <p class="place-card__type">Ромашки, подсолнухи</p>
+                  </div>
+                </article>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <a class="footer__logo-link" href="main.html">
+        <img class="footer__logo" src="img/logo.svg" alt="FloraDream" width="64" height="33">
+      </a>
+    </footer>
+  </div>
+</body>
+</html>
